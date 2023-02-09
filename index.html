@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <title>Slider</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.css"
+        />
+        <link
+            data-default-icon="https://static.cdninstagram.com/rsrc.php/v3/yt/r/30PrGfR3xhB.png"
+            rel="icon"
+            sizes="192x192"
+            href="https://static.cdninstagram.com/rsrc.php/v3/yt/r/30PrGfR3xhB.png"
+        />
+
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.6/swiper-bundle.min.js"
+            integrity="sha512-s/ili339Sh6gM9omfUC6fRwZPU6MPcGJxvDqlbBzPcFcD649iqeO96YQr3VKj/jZSMd2/T9Qr2mp2w4DyCIOPQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+    </head>
+    <body>
+        <div class="blog-slider">
+            <div class="blog-slider__wrp swiper-wrapper">
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="sass/blog-slider-img-1.png" alt="" />
+                    </div>
+                    <div class="blog-slider__content">
+                        <span class="blog-slider__code">26 December 2019</span>
+                        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                        <div class="blog-slider__text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Recusandae voluptate repellendus magni illo ea
+                            animi?
+                        </div>
+                        <a href="#" class="blog-slider__button">READ MORE</a>
+                    </div>
+                </div>
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="sass/blog-slider-img-2.png" alt="" />
+                    </div>
+                    <div class="blog-slider__content">
+                        <span class="blog-slider__code">26 December 2019</span>
+                        <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
+                        <div class="blog-slider__text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Recusandae voluptate repellendus magni illo ea
+                            animi?
+                        </div>
+                        <a href="#" class="blog-slider__button">READ MORE</a>
+                    </div>
+                </div>
+
+                <div class="blog-slider__item swiper-slide">
+                    <div class="blog-slider__img">
+                        <img src="sass/blog-slider-img-3.png" alt="" />
+                    </div>
+                    <div class="blog-slider__content">
+                        <span class="blog-slider__code">26 December 2019</span>
+                        <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+                        <div class="blog-slider__text">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit. Recusandae voluptate repellendus magni illo ea
+                            animi?
+                        </div>
+                        <a href="#" class="blog-slider__button">READ MORE</a>
+                    </div>
+                </div>
+            </div>
+            <div class="blog-slider__pagination"></div>
+        </div>
+        <script>
+            var swiper = new Swiper(".blog-slider", {
+                spaceBetween: 30,
+                effect: "fade",
+                loop: true,
+                mousewheel: {
+                    invert: false,
+                },
+
+                pagination: {
+                    el: ".blog-slider__pagination",
+                    clickable: true,
+                },
+            });
+        </script>
+    </body>
+</html>
